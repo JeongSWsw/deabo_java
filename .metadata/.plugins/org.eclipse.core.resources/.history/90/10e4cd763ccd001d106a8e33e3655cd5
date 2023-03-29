@@ -1,0 +1,26 @@
+package ex02.scanner;
+
+import java.lang.*; // 내부적으로 자동으로 import 되는 패키지
+import java.util.Scanner;
+
+public class MainEntry {
+
+	
+	public static void main(String[] args) {
+		
+		// 표준 입력 : System.in
+		// 표준 출력 : System.out
+		
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		
+		// nextXXX()
+		//     자료형
+		// nextInt()
+		// nextFloat()
+		// nextDouble()
+		// next() vs nextLine() <- String input method
+		
+		
+	}
+}

@@ -1,0 +1,21 @@
+package ex01.operator;
+
+public class MainEntry {
+
+	// 최단산쉬관논삼대콤
+	public static void main(String[] args) {
+		//최우선 연산자 (), [], .
+		
+		//단항 연산자 : 증감 연산자 -> ++, --, ~
+		
+		int x = 10, y;
+		//y = x++; // 후위연산 : 대입먼저, 연산 나중에
+		//y = ++x;   // 전위연산 : 연산먼저, 대입 나중에
+		
+		x++; //++x;
+		y = x;
+		System.out.println("x = "+x+"\ty = "+y);
+		
+		
+	}
+}
