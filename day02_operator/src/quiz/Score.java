@@ -16,9 +16,12 @@ public class Score {
 		int comScore = sc.nextInt();
 		
 		System.out.println(name + "님의 성적표************");
-		System.out.println("국어 : "+korScore+", 영어 : "+engScore+", 전산 : "+comScore);
+		System.out.println("국어 : "+korScore
+				+", 영어 : "+engScore
+				+", 전산 : "+comScore);
 		
 		
-		System.out.println("총점 : "+(korScore+engScore+comScore)+", 평균 : "+(korScore+engScore+comScore)/3.0);
+		System.out.println("총점 : "+(korScore+engScore+comScore)
+				+", 평균 : "+(korScore+engScore+comScore)/3.0);
 	}
 }
