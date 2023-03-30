@@ -1,4 +1,4 @@
-package ex03_operator;
+package ex03.operator;
 
 public class OperatorTest {
 

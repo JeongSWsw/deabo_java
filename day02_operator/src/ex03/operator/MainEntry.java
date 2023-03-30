@@ -1,5 +1,5 @@
 //*
-package ex03_operator;
+package ex03.operator;
 
 import java.util.Scanner;
 

@@ -9,6 +9,7 @@ public class Quiz_Switch {
 		int jumsu = new Scanner(System.in).nextInt();
 		
 		switch (jumsu / 10) {
+		case 10 :
 		case 9 : System.out.print("A"); break;
 		case 8 : System.out.print("B"); break;
 		case 7 : System.out.print("C"); break;
