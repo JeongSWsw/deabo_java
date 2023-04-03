@@ -13,14 +13,14 @@ public class Lotto {
 				number[j] = rand.nextInt(45) + 1;
 
 				// 중복 체크 start
-				//for (int k = 0; k < 6; k++) {
-					for (int l = 0; l < j; l++) {
-						if (number[j] == number[l]) {
-							do {
-								number[j] = rand.nextInt(45) + 1;
-							} while (number[j] == number[l]);
-						}
-				//	}
+				// for (int k = 0; k < 6; k++) {
+				for (int l = 0; l < j; l++) {
+					if (number[j] == number[l]) {
+						do {
+							number[j] = rand.nextInt(45) + 1;
+						} while (number[j] == number[l]);
+					}
+					// }
 				}
 				// 중복 체크 end
 				System.out.print(number[j] + " ");
