@@ -1,73 +1,61 @@
 //*
 package ex03.array;
 
+
 import java.util.Scanner;
 
 public class Score3 {
-
-	public static void main(String[] args) {
-
-		int INWON = 3;
-		Scanner sc = new Scanner(System.in);
-		String[] message = new String[] { "no : ", "name : ", "kor : " };
-		int[] num = new int[INWON];
-		int[] kor = new int[INWON];
-		int[] eng = new int[INWON];
-		int[] math = new int[INWON];
-		int[] total = new int[INWON];
-		double[] avg = new double[INWON];
-		String[] name = new String[INWON];
-		char[] grade = new char[INWON];
-		double avgall = 0.;
-		int totalall = 0;
-
-		for (int i = 0; i < INWON; i++) {
-			System.out.print("번호입력 : ");
-			num[i] = sc.nextInt();
-			System.out.print("이름입력 : ");
-			name[i] = sc.next();
-			System.out.print("국어입력 : ");
-			kor[i] = sc.nextInt();
-			System.out.print("영어입력 : ");
-			eng[i] = sc.nextInt();
-			System.out.print("수학입력 : ");
-			math[i] = sc.nextInt();
-
-			total[i] = kor[i] + eng[i] + math[i];
-			avg[i] = (total[i] / 3.);
-			totalall += total[i];
-			avgall = (double) totalall / INWON;
-
-			switch (((int) avg[i]) / 10) {
-			case 10:
-			case 9:
-				grade[i] = 'A';
-				break;
-			case 8:
-				grade[i] = 'B';
-				break;
-			case 7:
-				grade[i] = 'C';
-				break;
-			case 6:
-				grade[i] = 'D';
-				break;
-			default:
-				grade[i] = 'F';
-
-			} // end switch
-
-		} // end for
-		for (int i = 0; i < INWON; i++) {
-			System.out.println("==========================");
-			System.out.println("번호 : " + num[i] + "\n이름 : " + name[i] + "님의 성적표******\n 총 점 : " + total[i]);
-			System.out.println("==========================");
-		} // end for
-		System.out.println("==========================");
-		System.out.printf("학급총점 : " + totalall + "\n학급평점 : %.2f", avgall);
-		System.out.println("==========================");
-
-	}
-
+   public static void main(String[] args) {
+      
+      int SU = 4, NO = 3;
+      Scanner sc = new Scanner(System.in);
+      int[][] arr = new int[SU][NO+1];   //인원수, 과목수
+      String[] name = new String[SU];
+      double[] avg = new double[SU];
+      char[] grade = new char[SU];
+      
+      for (int i = 0; i < arr.length; i++) {
+         System.out.printf("%d 번째 학생 이름: ", i+1);
+         name[i] = sc.next();
+         
+         for (int j = 0; j < arr[0].length-1; j++) {
+            switch(j) {
+            case 0 : System.out.println("국어점수 입력: ");
+               break;
+            case 1 : System.out.println("영어점수 입력: ");
+               break;
+            case 2 : System.out.println("전산점수 입력: ");
+               break;
+            }   //switch end
+            arr[i][j] = sc.nextInt();
+            arr[i][3] += arr[i][j]; //총점
+            
+            avg[i] = (double) arr[i][3] / NO;
+            
+            //학점(평점_
+            switch( (int)avg[i] / 10) {
+            case 10:
+            case 9: grade[i] = 'A'; break;
+            case 8: grade[i] = 'B'; break;
+            case 7: grade[i] = 'C'; break;
+            case 6: grade[i] = 'D'; break;
+            default : grade[i] = 'F';
+            }//switch end
+         
+         }// j end
+         
+      }//i end
+      //out put
+      
+      for (int i = 0; i < arr.length; i++) {
+    	  System.out.println(name[i]+"님의 성적표");
+    	  System.out.println("국어: " + arr[i][0]+"\t영어: " + arr[i][1]+"\t전산: " + arr[i][2]);
+    	  System.out.printf("총점: %d 평균 : %.1f 평점(학점) : %c \n", arr[i][3], avg[i], grade[i]);
+         line();
+      }
+   }
+   private static void line() {
+      System.out.println("----------------------------");
+   }
 }
 //*/

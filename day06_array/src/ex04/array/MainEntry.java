@@ -30,15 +30,15 @@ public class MainEntry {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
 				for (int k = 0; k < arr[0][0].length; k++) {
-					System.out.printf("arr[%d][%d][%d] = ",i,j,k);
+					System.out.printf("arr[%d][%d][%d] = ", i, j, k);
 					arr[i][j][k] = new Scanner(System.in).nextInt();
 				}
 			}
 		}
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[0].length; j++) {
-				for (int k = 0; k < arr[0][0].length; k++) {
-					System.out.print(arr[i][j][k]);
+		for (int[][] arr2d : arr) {
+			for (int[] arr1d : arr2d) {
+				for (int element : arr1d) {
+					System.out.print(element);
 				}
 				System.out.println();
 			}
