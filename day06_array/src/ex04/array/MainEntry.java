@@ -1,7 +1,7 @@
 //*
 package ex04.array;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class MainEntry {
 	public static void main(String[] args) {
@@ -30,15 +30,16 @@ public class MainEntry {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
 				for (int k = 0; k < arr[0][0].length; k++) {
-					System.out.printf("arr[%d][%d][%d] = ", i, j, k);
-					arr[i][j][k] = new Scanner(System.in).nextInt();
+					//System.out.printf("arr[%d][%d][%d] = ", i, j, k);
+					//arr[i][j][k] = new Scanner(System.in).nextInt();
+					arr[i][j][k]= new Random().nextInt(45)+1;
 				}
 			}
 		}
 		for (int[][] arr2d : arr) {
 			for (int[] arr1d : arr2d) {
 				for (int element : arr1d) {
-					System.out.print(element);
+					System.out.print(element+"\t");
 				}
 				System.out.println();
 			}
