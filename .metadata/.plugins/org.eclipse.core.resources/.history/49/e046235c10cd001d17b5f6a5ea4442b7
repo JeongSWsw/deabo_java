@@ -1,9 +1,0 @@
-package ex02.datatype;
-
-public class MainEntry {
-	public static void main(String[] args) {
-		int su = 30;
-		System.out.println(su);
-		
-	}
-}
