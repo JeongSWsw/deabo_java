@@ -15,6 +15,17 @@ public class MainEntry {
 		}
 		System.out.println();
 	}
+	public static void line(int n, int y, String str) {
+		if(n>y) { //교환
+			int temp = n;
+			n = y;
+			y = temp;
+		}
+		for(int i = n ; i < y; i++) {
+			System.out.print(str);
+		}
+		System.out.println();
+	}
 	
 	public static void main(String[] args) {
 		line(10,"*");
