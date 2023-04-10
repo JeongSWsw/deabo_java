@@ -16,6 +16,13 @@ public class MainEntry {
 			tt[i].stop(str[i]);
 		}
 
+		Trans[] t = new Trans[4];
+		Object[] name = {new Bicycle(), new Bus(), new Subway(), new Plane()};
+		for(int i = 0; i < name.length; i++) {
+			t[i] = (Trans)name[i];
+			t[i].start(str[i]);
+			t[i].stop(str[i]);
+		}
 	}
 
 }
