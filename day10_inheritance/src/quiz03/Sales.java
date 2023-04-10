@@ -8,7 +8,7 @@ public class Sales extends Regular {
 	public Sales(int num, String name, String department, String phoneNum, int commissionNum) {
 		super(num, name, department, phoneNum);
 		if(commissionNum>=10) {
-			this.commission = 1;
+			this.commission = 1 * commissionNum;
 		}
 	}
 
