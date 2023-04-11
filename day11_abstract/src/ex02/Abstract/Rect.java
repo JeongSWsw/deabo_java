@@ -1,5 +1,6 @@
 package ex02.Abstract;
 
+
 public class Rect extends Shape {
 	int h = 10;
 	

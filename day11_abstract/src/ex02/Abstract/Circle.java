@@ -1,5 +1,6 @@
 package ex02.Abstract;
 
+
 public class Circle extends Shape{
 
 	@Override

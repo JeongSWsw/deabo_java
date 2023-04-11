@@ -1,5 +1,6 @@
 package ex02.Abstract;
 
+
 public class Triangle extends Shape {
 	int w = 100;
 	@Override
