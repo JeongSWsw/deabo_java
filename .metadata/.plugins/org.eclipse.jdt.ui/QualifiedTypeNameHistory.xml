@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex01.Abstract.Rect"/>
     <fullyQualifiedTypeName name="ex02.Interface.IDraw"/>
+    <fullyQualifiedTypeName name="ex04.apiObject.Rectangle"/>
 </qualifiedTypeNameHistroy>
