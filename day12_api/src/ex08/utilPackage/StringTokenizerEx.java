@@ -26,7 +26,7 @@ public class StringTokenizerEx {
 	public static void main(String[] args) {
 		StringTokenizer token = new StringTokenizer("박/노/전/김","/");
 				//new StringTokenizer("박 노 전 김");
-		while(token.hasMoreElements()) {
+		while(token.hasMoreTokens()) {
 			System.out.println(token.nextToken());
 		}
 	}
