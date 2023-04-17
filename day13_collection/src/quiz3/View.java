@@ -8,11 +8,6 @@ import quiz.Customer;
 
 public class View {
 	public static void main(String[] args) {
-		int SU = 2, NO = 3;
-//		int[][] arr = new int[SU][NO + 1]; // 인원수, 과목수
-//		String[] name = new String[SU];
-//		double[] avg = new double[SU];
-//		char[] grade = new char[SU];
 		
 		ArrayList<Score> scores = new ArrayList<>();
 		Scanner sc = new Scanner(System.in);
