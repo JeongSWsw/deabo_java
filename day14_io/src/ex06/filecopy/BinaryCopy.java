@@ -20,9 +20,8 @@ public class BinaryCopy {
 		try {
 			fis = new FileInputStream(src); // 파일 입력 바이트 스트림 연결
 			fos = new FileOutputStream(dist);// 파일 출력 바이트 스트림 연결
-			bis = new BufferedInputStream(fis); // 버퍼입력스트림 연결
+			bis = new BufferedInputStream(fis); // 버퍼입력스트림 연결 // 속도를 빠르게 해줌
 			bos = new BufferedOutputStream(fos);// 버퍼출력스트림 연결
-			
 			while((c=bis.read())!= -1) {
 				bos.write((char)c);
 			}
@@ -33,7 +32,7 @@ public class BinaryCopy {
 			fos.close();
 		} catch (Exception e) {
 			System.out.println("파일 복사 오류");
-//			e.printStackTrace();
+			e.printStackTrace();
 		}
 		
 	}
