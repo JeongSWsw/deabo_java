@@ -11,6 +11,8 @@ public class MainEntry {
 		t2.setPriority(Thread.NORM_PRIORITY);
 		t3.setPriority(Thread.MAX_PRIORITY);
 		
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().getState());
 		
 		t1.run(); // thread를 실행한게 아닌 , 명시적으로 run메소드를 호출한 것
 		t1.start(); // run() 메소드 유도
