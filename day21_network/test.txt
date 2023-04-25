@@ -1,0 +1,115 @@
+
+
+===================================
+>> day1 - 23/03/27
+
+ > 시스템 확인하기
+   - 메모리 64
+   - 자바 설치 유무
+
+ > JDK 17 download
+  https://adoptium.net   <--- 권장
+  https://openjdk.org
+  https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+
+  https://docs.oracle.com/javase/8/docs/api
+  https://docs.oracle.com/en/java/javase/17/docs/api/index.html
+
+ > eclipse : 2022-06
+  https://www.eclipse.org
+
+ > 환경변수 설정
+   1. JAVA_HOME 
+      C:\Program Files\Java\jdk-17.0.6.10-hotspot
+
+    2. CLASSPATH
+       .;
+
+   3. 편집 하세요. Path 
+      %JAVA_HOME%\bin
+
+ >컴파일
+  C:\daebo_th2\1_Java\workspace>javac FirustJava.java
+  한글 깨질시
+  C:\daebo_th2\1_Java\workspace>javac -encoding utf-8  FirustJava.java
+
+ > 실행
+  C:\daebo_th2\1_Java\workspace>java FirustJava
+
+
+-----------------------------------------------------------------
+1팀 : 송기석
+2팀 : 정승원
+3팀 : 이재진
+4팀 : 심명관
+5팀 : 임근호
+6팀 : 박성준
+------------------------------------------------------------------
+
+ > 줌
+    https://sjcu-ac-kr.zoom.us/j/96765726074?pwd=dmtrQmxEMzB1RVR1NkdWN3gzR2dpUT09
+   ID 927 592 6161
+   PWD : kosajava
+
+
+---------------------------------------
+1. 개인과제
+2. 팀과제
+   가) 일일과제 - 알고리즘 문제 
+   나) 미니프로젝트 - 3회 
+   다) 파이널 과제 - 1회 (최종)
+
+반장 : 곽규창 010-9210-8128
+
+
+ 
+*** 유용한 사이트 ****
+ https://www.javatpoint.com
+
+ > 전산용어
+ http://www.terms.co.kr
+ https://ko.wikipedia.org
+
+ http://www.etnews.com
+
+ https://www.codeproject.com
+
+ > 동영상 강좌 & 문제 은행
+ https://cafe.naver.com/thisisjava
+ https://cafe.naver.com/javachobostudy
+ https://www.orentec.co.kr/
+ 신입SW인력을 위한 실전 자바(Java)
+ https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
+ https://www.opentutorials.org/course/1223
+
+
+ > 자격증
+   ocjp
+   정보처리 기사(산업기사)
+
+ > 알고리즘
+ https://www.acmicpc.net
+ https://programmers.co.kr
+ https://swexpertacademy.com/main/main.do
+-------------------------------------------------
+ - 강사컴 접속 
+ 1) 웹 접속 방법
+http://192.168.0.61/daebo_th2
+http://desktop-mm6f3ud
+
+ 2) 네트워크 접속 방법
+\\desktop-mm6f3ud  (대소문자 구분 없음)
+\\192.168.0.61
+
+  > id / pwd
+  java / java 
+
+---------------------------------------------------
+>> 이도연(영희)
+ ai.edu.kingsmile@gmail.com 
+ 010-9872-0202
+
+
+
+
+
